@@ -121,7 +121,7 @@
     "identifier": {
       "@type": "PropertyValue",
       "name": "DMW License",
-      "value": "DMW-009-LB-03072023-R"
+      "value": "DMW-804-LB-08272026-R"
     }
   }
   </script>
@@ -182,7 +182,7 @@
           </a>
 
           <!-- Apply Now -->
-          <a href="#jobs" class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold rounded-xl
+          <a href="#submit-cv" data-general-cv class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold rounded-xl
           text-[#2B1A00]
           bg-gradient-to-r from-[#CFAF3A] to-[#E6C65B]
           shadow-md
@@ -232,7 +232,7 @@
       <a href="#deployment" class="text-white text-xl font-medium hover:text-accent-400">Deployment</a>
       <a href="#contact" class="text-white text-xl font-medium hover:text-accent-400">Contact</a>
       <div class="pt-6 border-t border-white/20">
-        <a href="#jobs" class="btn-accent text-center block">Apply Now</a>
+        <a href="#submit-cv" data-general-cv class="btn-accent text-center block">Apply Now</a>
       </div>
     </nav>
   </div>
@@ -317,7 +317,7 @@
               </div>
 
               <span class="text-white text-sm font-medium transition-colors duration-300 group-hover:text-green-300">
-                Global Partners 
+                Global Partners
               </span>
             </div>
 
@@ -706,10 +706,16 @@
               class="relative overflow-hidden rounded-3xl shadow-[0_25px_70px_rgba(15,23,42,0.18)] h-[500px] group bg-slate-950 ring-1 ring-white/10">
 
               <!-- Soft Background Glow -->
-              <video id="aboutRightVideo" class="w-full h-full object-contain" autoplay muted loop playsinline
-                webkit-playsinline preload="auto">
+               <video
+                    id="aboutRightVideo"
+                    class="w-full h-full object-contain"
+                    controls
+                    loop
+                    playsinline
+                    webkit-playsinline
+                    preload="auto">
 
-                <source src="Video/about-video.mp4" type="video/mp4">
+                <source src="Video/jo-hiring1vid.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
 
@@ -735,7 +741,18 @@
           </div>
         </div>
 
+
+
+
       </div>
+
+        <div class="lg:col-span-2 mt-4 pt-4">
+            <img
+              src="images/jo-hiring1.jpg"
+              alt="Joseline International Manpower Corporation Hiring"
+              class="w-full h-auto rounded-3xl object-cover shadow-[0_25px_70px_rgba(15,23,42,0.12)]"
+            >
+        </div>
     </div>
   </section>
 
@@ -1051,148 +1068,93 @@
         </p>
       </div>
 
-      <!-- Filter Buttons -->
-      <div class="reveal stagger-2 flex flex-wrap justify-center gap-2 mb-12">
-        <button class="job-filter-btn active px-6 py-2 rounded-full text-sm font-medium transition-all"
-          data-filter="all">All Positions</button>
-        <button class="job-filter-btn px-6 py-2 rounded-full text-sm font-medium transition-all"
-          data-filter="healthcare">Healthcare</button>
-        <button class="job-filter-btn px-6 py-2 rounded-full text-sm font-medium transition-all"
-          data-filter="construction">Construction</button>
-        <button class="job-filter-btn px-6 py-2 rounded-full text-sm font-medium transition-all"
-          data-filter="it">IT</button>
-        <button class="job-filter-btn px-6 py-2 rounded-full text-sm font-medium transition-all"
-          data-filter="professional">Professional</button>
-      </div>
-
-      <!-- Job Cards Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="jobs-grid">
-        <!-- Job 1 -->
-        <div class="reveal job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
-          data-category="healthcare">
-          <div class="flex items-start justify-between mb-4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQod4bLXpxkIRT1M6CX8zA2E-B1Feyfv-kX1g&s"
-              alt="Healthcare professional" class="w-12 h-12 rounded-xl object-cover">
-            <span class="badge badge-teal">Healthcare</span>
-          </div>
-          <h3 class="font-display text-xl font-bold text-primary-950 mb-2">Female Nursing Specialist</h3>
-          <p class="text-slate-600 text-sm mb-4">Provide professional nursing care in medical facilities. Must
-            have valid nursing license and clinical experience.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Saudi Arabia</span>
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Full-time</span>
-          </div>
-          <button class="job-apply-btn w-full py-3 text-white rounded-lg font-medium transition-all">Apply
-            Now</button>
-        </div>
-
-        <!-- Job 2 -->
-        <div class="reveal stagger-1 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
-          data-category="construction">
-          <div class="flex items-start justify-between mb-4">
-            <img src="https://mindanews.com/wp-content/uploads/2017/09/06workers_web.jpg" alt="Construction worker"
-              class="w-12 h-12 rounded-xl object-cover">
-            <span class="badge badge-accent">Construction</span>
-          </div>
-          <h3 class="font-display text-xl font-bold text-primary-950 mb-2">Tile Worker / Tile Setter</h3>
-          <p class="text-slate-600 text-sm mb-4">Install tiles in residential and commercial buildings.
-            Experience with various tile materials required.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Saudi Arabia</span>
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Full-time</span>
-          </div>
-          <button class="job-apply-btn w-full py-3 text-white rounded-lg font-medium transition-all">Apply
-            Now</button>
-        </div>
-
-        <!-- Job 3 -->
-        <div class="reveal stagger-2 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
-          data-category="construction">
-          <div class="flex items-start justify-between mb-4">
-            <img
-              src="https://img.freepik.com/premium-photo/side-view-handsome-asian-electrician-repairing-electrical-box-with-pliers-corridor_697211-98.jpg?w=360"
-              alt="Electrician at work" class="w-12 h-12 rounded-xl object-cover">
-            <span class="badge badge-accent">Construction</span>
-          </div>
-          <h3 class="font-display text-xl font-bold text-primary-950 mb-2">Building Electrician</h3>
-          <p class="text-slate-600 text-sm mb-4">Install and maintain electrical systems in buildings. Must
-            have relevant certifications and experience.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Saudi Arabia</span>
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Full-time</span>
-          </div>
-          <button class="job-apply-btn w-full py-3 text-white rounded-lg font-medium transition-all">Apply
-            Now</button>
-        </div>
-
-        <!-- Job 4 -->
-        <div class="reveal stagger-3 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
-          data-category="it">
-          <div class="flex items-start justify-between mb-4">
-            <img
-              src="https://images.unsplash.com/photo-1555747590-6d40108fae52?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8SVQlMjBTVVBQT1JUJTIwVEVDSE5JQ0lBTiUyMFBJTk9ZfGVufDB8fDB8fHww"
-              alt="IT support specialist" class="w-12 h-12 rounded-xl object-cover">
-            <span class="badge badge-primary">IT</span>
-          </div>
-          <h3 class="font-display text-xl font-bold text-primary-950 mb-2">IT Support Technician</h3>
-          <p class="text-slate-600 text-sm mb-4">Provide technical support and maintain IT infrastructure.
-            Experience with network systems required.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Timor-Leste</span>
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Full-time</span>
-          </div>
-          <button class="job-apply-btn w-full py-3 text-white rounded-lg font-medium transition-all">Apply
-            Now</button>
-        </div>
-
-        <!-- Job 5 -->
-        <div class="reveal stagger-4 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
-          data-category="professional">
-          <div class="flex items-start justify-between mb-4">
-            <img
-              src="https://www.ianfulgar.com/wp-content/uploads/2022/01/ian-fulgar-architect-how-to-be-an-architect-in-the-philippines-architect-drafting-building-plans-at-desk-1024x683.webp"
-              alt="Architectural draftsman" class="w-12 h-12 rounded-xl object-cover">
-            <span class="badge badge-success">Professional</span>
-          </div>
-          <h3 class="font-display text-xl font-bold text-primary-950 mb-2">Architectural Draftsman</h3>
-          <p class="text-slate-600 text-sm mb-4">Create detailed architectural drawings and plans. Proficiency
-            in CAD software is essential.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Timor-Leste</span>
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Full-time</span>
-          </div>
-          <button class="job-apply-btn w-full py-3 text-white rounded-lg font-medium transition-all">Apply
-            Now</button>
-        </div>
-
-        <!-- Job 6 -->
-        <div class="reveal stagger-5 job-card card-hover bg-white rounded-2xl p-6 border border-slate-200 shadow-sm"
-          data-category="professional">
-          <div class="flex items-start justify-between mb-4">
-            <img
-              src="https://shoppable.ph/wp-content/uploads/2024/02/how-to-find-the-right-supplier-in-the-philippines-shoppable.jpg"
-              alt="Business professional" class="w-12 h-12 rounded-xl object-cover">
-            <span class="badge badge-success">Professional</span>
-          </div>
-          <h3 class="font-display text-xl font-bold text-primary-950 mb-2">Purchase Representative</h3>
-          <p class="text-slate-600 text-sm mb-4">Handle procurement and purchasing activities. Experience in
-            supply chain management preferred.</p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Greece</span>
-            <span class="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full">Full-time</span>
-          </div>
-          <button class="job-apply-btn w-full py-3 text-white rounded-lg font-medium transition-all">Apply
-            Now</button>
-        </div>
-      </div>
+      <div id="job-country-filters" class="flex flex-wrap justify-center gap-2 mb-8" aria-label="Filter openings by country"></div>
+      <p id="jobs-status" class="text-center text-slate-600 mb-6" role="status">Loading available openings...</p>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="jobs-grid"></div>
+      <div id="jobs-pagination" class="flex justify-center items-center gap-4 mt-8"></div>
 
       <div class="reveal text-center mt-12">
         <p class="text-slate-600 mb-4">Don't see a position that matches your skills?</p>
-        <a href="#contact"
+        <a href="#submit-cv" data-general-cv
           class="btn-outline-dark inline-block hover:bg-black hover:text-white hover:border-black transition-all duration-300">
           Send Your Resume
         </a>
       </div>
+    </div>
+  </section>
+  <section id="submit-cv" class="py-20 lg:py-32 bg-slate-50 cv-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+      <div>
+        <span class="inline-block text-accent-600 font-semibold tracking-wider text-sm uppercase mb-4">Your next opportunity</span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-950 mb-6">Submit Your <span class="text-gradient">CV</span></h2>
+        <p class="text-slate-600 text-lg mb-6">Apply for an available opening or share your CV for future opportunities. Our recruitment team will review your experience and contact you if there is a suitable match.</p>
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 text-slate-600 space-y-3">
+          <p>Choose an opening, or select <strong>General CV submission</strong>.</p>
+          <p>Upload one PDF, DOC, or DOCX file, up to 5 MB.</p>
+          <p>Submitting a CV does not guarantee placement.</p>
+        </div>
+      </div>
+      <form id="cv-form" class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200" novalidate>
+        <p id="cv-config-status" class="text-red-700 mb-4" role="status" hidden></p>
+        <fieldset id="cv-fields">
+          <legend class="sr-only">Applicant details</legend>
+          <div class="grid sm:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="cv-first_name" class="block text-sm font-medium text-slate-700 mb-2">First name</label>
+                <input id="cv-first_name" name="first_name" type="text" maxlength="100" required autocomplete="given-name" class="cv-input" aria-describedby="cv-error-first_name">
+                <p id="cv-error-first_name" data-error="first_name" class="cv-error" hidden></p>
+              </div>
+              <div>
+                <label for="cv-last_name" class="block text-sm font-medium text-slate-700 mb-2">Last name</label>
+                <input id="cv-last_name" name="last_name" type="text" maxlength="100" required autocomplete="family-name" class="cv-input" aria-describedby="cv-error-last_name">
+                <p id="cv-error-last_name" data-error="last_name" class="cv-error" hidden></p>
+              </div>
+              <div>
+                <label for="cv-middle_name" class="block text-sm font-medium text-slate-700 mb-2">Middle name (optional)</label>
+                <input id="cv-middle_name" name="middle_name" type="text" maxlength="100"  autocomplete="additional-name" class="cv-input" aria-describedby="cv-error-middle_name">
+                <p id="cv-error-middle_name" data-error="middle_name" class="cv-error" hidden></p>
+              </div>
+              <div>
+                <label for="cv-email" class="block text-sm font-medium text-slate-700 mb-2">Email address</label>
+                <input id="cv-email" name="email" type="email" maxlength="100" required autocomplete="email" class="cv-input" aria-describedby="cv-error-email">
+                <p id="cv-error-email" data-error="email" class="cv-error" hidden></p>
+              </div>
+              <div>
+                <label for="cv-contact_number" class="block text-sm font-medium text-slate-700 mb-2">Phone number</label>
+                <input id="cv-contact_number" name="contact_number" type="tel" maxlength="100" required autocomplete="tel" class="cv-input" aria-describedby="cv-error-contact_number">
+                <p id="cv-error-contact_number" data-error="contact_number" class="cv-error" hidden></p>
+              </div>
+              <div>
+                <label for="cv-job_id" class="block text-sm font-medium text-slate-700 mb-2">Position</label>
+                <select id="cv-job_id" name="job_id" class="cv-input" aria-describedby="cv-error-job_id">
+                  <option value="">General CV submission</option>
+                </select>
+                <p id="cv-error-job_id" data-error="job_id" class="cv-error" hidden></p>
+              </div>
+          </div>
+          <div class="mb-6">
+            <label for="cv-cover_letter" class="block text-sm font-medium text-slate-700 mb-2">Short introduction (optional)</label>
+            <textarea id="cv-cover_letter" name="cover_letter" rows="3" maxlength="300" class="cv-input" aria-describedby="cv-error-cover_letter" placeholder="Tell us briefly about your skills and experience."></textarea>
+            <p id="cv-error-cover_letter" data-error="cover_letter" class="cv-error" hidden></p>
+          </div>
+          <div class="mb-6 rounded-xl border border-dashed border-slate-300 p-5 bg-slate-50">
+            <label for="cv-resume" class="block text-sm font-medium text-slate-700 mb-2">Your CV</label>
+            <input id="cv-resume" name="resume" type="file" accept=".pdf,.doc,.docx" required class="block w-full text-sm text-slate-700" aria-describedby="cv-file-help cv-filename cv-error-resume">
+            <p id="cv-file-help" class="text-sm text-slate-500 mt-2">PDF, DOC, or DOCX · Maximum 5 MB. Choose another file to replace your selection.</p>
+            <p id="cv-filename" class="text-sm text-slate-700 mt-2 break-all" role="status">No file selected</p>
+            <p id="cv-error-resume" data-error="resume" class="cv-error" hidden></p>
+          </div>
+          <div class="mb-6">
+            <label class="flex items-start gap-3 text-sm text-slate-600" for="cv-accepted_terms_and_condition">
+              <input id="cv-accepted_terms_and_condition" name="accepted_terms_and_condition" type="checkbox" value="1" required class="mt-1" aria-describedby="cv-error-accepted_terms_and_condition">
+              <span>I consent to Joseline Manpower collecting and using my contact details and CV to review my application, consider me for recruitment opportunities, and contact me about suitable roles.</span>
+            </label>
+            <p id="cv-error-accepted_terms_and_condition" data-error="accepted_terms_and_condition" class="cv-error" hidden></p>
+          </div>
+          <button id="cv-submit" type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 disabled:opacity-60 disabled:cursor-not-allowed">Submit CV</button>
+        </fieldset>
+        <p id="cv-status" class="mt-4 text-sm" role="status" aria-live="polite" tabindex="-1" hidden></p>
+      </form>
     </div>
   </section>
   <section id="deployment" class="py-20 lg:py-32 bg-primary-950 relative overflow-hidden">
@@ -1432,14 +1394,14 @@
 
       <!-- Deployment In Greece Images -->
       <section id="deployment" class="py-20 bg-primary-950">
-          <div class="max-w-5xl mx-auto px-4"> 
+          <div class="max-w-5xl mx-auto px-4">
             <div class="mb-12">
               <h2 class="text-4xl font-bold text-white text-center mb-6 font-display">
                 Successful Deployment in <span class="text-accent-400">Greece</span>
               </h2>
               <p class="text-primary-200 text-lg text-center max-w-2xl mx-auto leading-relaxed">
-                Connecting Greece's logistics industry with skilled Filipino professionals. We specialize in deploying 
-                essential personnel, including <strong>Cargo Loaders and Baggage Handlers</strong>, 
+                Connecting Greece's logistics industry with skilled Filipino professionals. We specialize in deploying
+                essential personnel, including <strong>Cargo Loaders and Baggage Handlers</strong>,
                 to ensure seamless and reliable operations.
               </p>
             </div>
@@ -2074,7 +2036,7 @@
           Get in <span class="text-gradient">Touch</span>
         </h2>
         <p class="reveal stagger-2 text-slate-600 text-lg">
-          Have questions or want to apply? Reach out to us and our team will assist you.
+          Have questions? Reach out to us and our team will assist you. To apply, use the <a href="#submit-cv" class="underline text-primary-600">Submit Your CV form</a> above.
         </p>
       </div>
 
@@ -2198,7 +2160,7 @@
             <button type="submit"
               class="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center space-x-2">
               <span>Send Inquiry</span>
-              
+
             </button>
 
             <p id="form-status" class="text-center mt-4 text-sm hidden"></p>
@@ -2405,6 +2367,22 @@
               </a>
             </li>
 
+            <li>
+              <a href="https://maps.app.goo.gl/SkGLUznCowH5hW6y8" target="_blank"
+                class="text-primary-200 hover:text-white transition-all duration-300 text-sm ">
+                Room 254 Plazamart Mall, Bacolod City, Philippines<br>
+                Ms.Step +63 993 242 7239
+              </a>
+            </li>
+
+            <li>
+              <a href="#!" target="_blank"
+                class="text-primary-200 hover:text-white transition-all duration-300 text-sm ">
+                468 Galvez Building 3rd Floor, San Jose Road, Zamboanga City<br>
+                09973386249 / 09482678514
+              </a>
+            </li>
+
             <!-- Email -->
             <li>
               <a href="mailto:inquire.joselinemanpowercorp@gmail.com"
@@ -2417,7 +2395,7 @@
             <li>
               <a href="#" class="flex items-center text-primary-200 hover:text-white transition-colors text-sm">
 
-                DMW-009-LB-03072023-R
+                DMW-804-LB-08272026-R
               </a>
             </li>
 
@@ -2473,6 +2451,7 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="cv.js"></script>
   <script type="module" src="main.js"></script>
 </body>
 

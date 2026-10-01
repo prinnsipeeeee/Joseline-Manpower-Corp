@@ -126,40 +126,6 @@ const counterObserver = new IntersectionObserver(
 
 counters.forEach((counter) => counterObserver.observe(counter));
 
-const filterBtns = document.querySelectorAll(".job-filter-btn");
-const jobCards = document.querySelectorAll(".job-card");
-
-filterBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    filterBtns.forEach((b) => {
-      b.classList.remove("active", "bg-primary-600", "text-white");
-      b.classList.add("bg-slate-100", "text-slate-600");
-    });
-    btn.classList.add("active", "bg-primary-600", "text-white");
-    btn.classList.remove("bg-slate-100", "text-slate-600");
-
-    const filter = btn.getAttribute("data-filter");
-    jobCards.forEach((card) => {
-      const category = card.getAttribute("data-category");
-      if (filter === "all" || category === filter) {
-        card.style.display = "block";
-        setTimeout(() => (card.style.opacity = "1"), 10);
-      } else {
-        card.style.opacity = "0";
-        setTimeout(() => (card.style.display = "none"), 300);
-      }
-    });
-  });
-});
-
-filterBtns.forEach((btn) => {
-  if (btn.classList.contains("active")) {
-    btn.classList.add("bg-primary-600", "text-white");
-  } else {
-    btn.classList.add("bg-slate-100", "text-slate-600");
-  }
-});
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -170,29 +136,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         block: "start",
       });
     }
-  });
-});
-
-const applyBtns = document.querySelectorAll(".job-apply-btn");
-applyBtns.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    const card = this.closest(".job-card");
-    if (!card) return;
-    const jobTitle = card.querySelector("h3")?.textContent || "";
-
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-
-    setTimeout(() => {
-      const positionSelect = document.getElementById("position");
-      if (positionSelect) {
-        for (let i = 0; i < positionSelect.options.length; i++) {
-          if (positionSelect.options[i].text.includes(jobTitle.split(" ")[0])) {
-            positionSelect.value = positionSelect.options[i].value;
-            break;
-          }
-        }
-      }
-    }, 800);
   });
 });
 

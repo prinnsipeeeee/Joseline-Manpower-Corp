@@ -630,3 +630,12 @@
   .swipter-button-next, .swiper-button-prev {
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
   }
+/* CV submission */
+.cv-section { scroll-margin-top: 110px; }
+.cv-input { width: 100%; padding: .625rem 1rem; border: 1px solid #cbd5e1; border-radius: .5rem; color: #334155; background: white; }
+.cv-input:focus { outline: 2px solid #2563eb; outline-offset: 2px; }
+.cv-input[aria-invalid="true"] { border-color: #b91c1c; }
+.cv-error { color: #b91c1c; font-size: .875rem; margin-top: .375rem; }
+.cv-error[hidden] { display: none; }
+#jobs-pagination button { padding: .5rem 1rem; border: 1px solid #cbd5e1; border-radius: .5rem; }
+#jobs-pagination button:disabled { opacity: .5; cursor: not-allowed; }
